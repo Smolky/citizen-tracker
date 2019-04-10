@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Title -->
+    <title>My first PWA template</title>
+
+    
+    <!-- Manifest. Our PWA -->
+    <link rel="manifest" href="manifest.json">
+    
+    
+    <!-- Some specific vendor suggestions --> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Citizen-Tracker">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    
+    <meta name="msapplication-TileImage" content="images/icons/citizen-trackeryy.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+    
+    
+    <!-- Icon -->
+    <link rel="icon" href="icons/citizen-tracker.png">
+
+    
+    <!-- Specific stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/shell.css">
+  
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header__title">My first PWA template</h1>
+    </header>
+  
+  
+    <!-- Shell -->
+    <div class="main"></div>
+
+  
+    
+    <!-- Loader -->
+    <div class="loader">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+        </svg>
+    </div>  
+  
+  
+    <!-- Javascripts loaded at the bottom -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-default';</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
