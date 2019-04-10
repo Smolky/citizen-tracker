@@ -1,0 +1,11 @@
+.main.state-offline:before {
+    content: "OFFLINE";
+    position: fixed;
+    right: .5rem;
+    top: .5rem;
+    background-color: #FF4136;
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    z-index: 5000;
+}

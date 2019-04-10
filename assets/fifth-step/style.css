@@ -1,0 +1,21 @@
+/** States */
+.visible-when-geolocation,
+.visible-when-no-geolocation {
+    display: none;
+}
+
+html.geolocation-state .visible-when-no-geolocation {
+    display: none;
+}
+
+html.geolocation-state .visible-when-geolocation {
+    display: block;
+}
+
+html.no-geolocation-state .visible-when-no-geolocation {
+    display: block;
+}
+
+html.no-geolocation-state .visible-when-geolocation {
+    display: none;
+}

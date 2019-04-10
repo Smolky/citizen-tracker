@@ -1,0 +1,57 @@
+<!-- @TODO. Copy this file within the <div class="main"> in the index.html file
+
+
+<!-- Form -->
+<form name="issue-form">
+
+    <!-- Options -->
+    <div class="btn-group">
+        <label class="button">
+            <input type="file" accept="image/*" capture id="camera">
+            Have you seen anything interesting?
+        </label>
+    </div>
+
+
+    <!-- Placeholder to show the image -->
+    <figure class="thumbnail">
+        <img id="frame">
+    </figure>
+
+    
+    <!-- Hidden fields. Used to send the image information -->
+    <input required type="hidden" name="photo" value="" />
+    <input type="hidden" name="latitude" value="" />
+    <input type="hidden" name="longitude" value="" />
+    <input type="hidden" name="accuracy" value="" />
+    
+    
+    <!-- User name -->
+    <label class="form-label">
+        <div>your name</div>
+        <input required type="text" name="username" placeholder="name" />
+    </label>
+
+
+    <!-- Textual information about the place -->
+    <label class="form-label visible-when-no-geolocation">
+        <div>Where are you?</div>
+        <input type="text" name="textual-location" placeholder="Please, tell us where you are or grant permissions" />
+    </label>
+    
+    
+    <!-- Description about the problem -->
+    <label class="form-label">
+        <div>Description</div>
+        <textarea 
+            required
+            name="description" 
+            rows="6"
+            placeholder="Add a short text, describing the fact. Around 50-200 words should be fine"></textarea>
+    </label>
+    
+    <button type="submit" class="button report-issue">
+        Send report
+    </button>
+
+</form>
